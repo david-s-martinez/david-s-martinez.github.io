@@ -1,4 +1,4 @@
-# Conferences and Presentations
+### Conferences and Presentations
 - **DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation**  
   *IEEE/RAS Humanoids 2024*
 
@@ -21,7 +21,7 @@
     - [*German Vice Chancellor, Robert Habeck*](https://ricaip.eu/german-vice-chancellor-habeck-visit/)
     - [*German President, Frank-Walter Steinmeier*](https://ricaip.eu/german-president-in-ricaip/)
 
-# Awards
+### Awards
 - **Winner** - Porsche Engineering Autonomous Driving Contest  
   *Issued by Porsche Engineering · May 2022*
 
@@ -32,6 +32,9 @@
 - **Finalist** - Global Smart Health Hackathon Prague 2020  
   *Issued by CEE Hacks · Jan 2020*  
   Created a TensorFlow-based computer vision solution capable of detecting patients and doctors in an intensive care unit.
+
+- **Special Purpose Scholarship Award** -  2019 and 2020  
+  *Faculty of Biomedical Engineering, CTU Prague · Jan 2019 and 2020*
 
 - **Finalist** - RobotCraft ROS Maze Solving Challenge 2019  
   *Issued by Ingeniarius and University of Coimbra · Jan 2019*

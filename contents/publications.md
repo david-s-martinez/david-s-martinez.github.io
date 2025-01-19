@@ -1,14 +1,60 @@
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, K. Fan, Y. Liu, C. Wang, and Q.Niu (2024). Label Noise-Robust Learning for Microseismic Arrival Time Picking. <strong>In Revision.</strong> [[Code]](https://github.com/david-s-martinez/LNRL)
+1. **DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation**  
+   *Associated with Agile Robots SE*  
+   DexGANGrasp is an AI model that uses conditional GANs (cGANs) to generate and evaluate robot grasps, achieving higher success rates than previous methods. By incorporating LLMs and VLMs through DexAfford-Prompt, it enables task-oriented grasping for complex, real-world scenarios.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-![image](/static/assets/img/photo.png)
+2. **Universal Robotic Cell**  
+   *Associated with RICAIP - Research and Innovation Centre on Advanced Industrial Production*  
+   An industrial robotic cell powered by Deep Learning and 3D Computer Vision to detect, track, optimally grasp, and sort moving objects with complex geometries on a conveyor belt.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
+3. **5G Edge Vision System**  
+   *Associated with RICAIP - Research and Innovation Centre on Advanced Industrial Production*  
+   An artificial vision system based on CNNs and 3D pose estimation for a collaborative delta robot, using an internal campus 5G network and a GPU server. Sponsored by T-Mobile CZ (Deutsche Telekom) and Siemens.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/david-s-martinez/SeisT)
+4. **Luggage Carrying Task with the TIAGo Humanoid Robotic Platform**  
+   *Associated with Technical University of Munich*  
+   Integrated advanced robotic capabilities like perception, manipulation, navigation, and human-robot interaction using ROS. Achievements include autonomous detection and navigation to pick up luggage using CNNs, obstacle avoidance via SLAM, and operator following through Human-Robot Interaction.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
+5. **NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI**  
+   *Associated with Technical University of Munich*  
+   The project aims to make the NAO Robot play the UNO card game. It uses ROS to integrate sensing, deep learning-based card detection, bipedal locomotion, and decision-making based on a State Machine Agent.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
+6. **Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation**  
+   *Associated with Technical University of Munich*  
+   A soft robotic glove for stroke patients, incorporating a CNN-based vision system to recognize objects and automatically adjust the hand's opening for grasping.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+7. **Design and Implementation of 2-DoF Upper-Limb Exoskeleton with Combined Force and Position Control for Rehabilitation**  
+   *Associated with Technical University of Munich*  
+   This exoskeleton assists arm and wrist movements with position and force control, using an "intention detection algorithm" to predict user motions. The system enhances natural movement through muscle activity analysis and motion tracking.  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
 
+8. **Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game**  
+   *Associated with Technical University of Munich*  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#)  
+
+9. **Fabrication of Soft Milli, Micro, and Nano Robots Based on Alginate Polymer Coating and Encapsulation**  
+   *Associated with Technical University of Munich*  
+   - [Code](#)  
+   - [Video](#)  
+   - [Article](#) 

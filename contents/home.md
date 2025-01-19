@@ -3,15 +3,16 @@
 [![david-s-martinez](https://img.shields.io/badge/page-Github%20Profile-l?logo=github&label=david-s-martinez&color=blue&link=https%3A%2F%2Fgithub.com%2Fdavid-s-martinez
 )](https://github.com/david-s-martinez)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+I am a student of the Elite Master’s program in Neuroengineering at the [School of Computation, Information and Technology](https://www.cit.tum.de/en/cit/home/) of the Technical University of Munich (TUM), where I am mentored by [Prof. Gordon Cheng](https://www.professoren.tum.de/en/cheng-gordon). Currently, I am immersed in groundbreaking research for my thesis, *"Neural Feature Fields for Language-Based Dexterous Robotic Manipulation,"* a collaboration between TUM and [Agile Robots SE](https://www.agile-robots.com/en/). This work is supervised by [Qian Feng](https://www.ce.cit.tum.de/air/people/qian-feng-msc/) and [Prof. Alois C. Knoll](https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/), with co-advisorship from [Jianxiang Feng](https://jianxiangfeng.github.io/).
 
 #### Email
-sli[at]cumt.edu.cn
+david.martinez@tum.de
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+- Technical University of Munich, Germany — Elite M.Sc. (Hons)  Neuroengineering (Neural Engineering, AI & Robotics), 2022-2025
+- Czech Technical University in Prague, Czechia — B.Sc. Biomedical & Clinical Technology (Bio-Mechatronics, Computational Imaging/Vision & ML), 2017-2021
+- University of Coimbra, Portugal — Erasmus+ Summer Exchange (Mechatronics, Robotics, and Automation Engineering), 2019
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Deep Learning, Artificial Intelligence, Robotics, Neural Engineering.
 

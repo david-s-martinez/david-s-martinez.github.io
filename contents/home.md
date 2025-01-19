@@ -1,6 +1,7 @@
 
 
-[![david-s-martinez](https://img.shields.io/badge/david-s-martinez-github-blue?logo=github)](https://github.com/david-s-martinez)
+[![david-s-martinez](https://img.shields.io/badge/page-Github%20Profile-l?logo=github&label=david-s-martinez&color=blue&link=https%3A%2F%2Fgithub.com%2Fdavid-s-martinez
+)](https://github.com/david-s-martinez)
 
 He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
 

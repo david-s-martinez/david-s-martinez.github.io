@@ -4,7 +4,7 @@
 
 <img src="../static/assets/img/hithand.gif" alt="DexF3RM" width="200"> 
 
-Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D models foundation, enabling few-shot learning for 6-DOF grasping with a dexterous hand.
+Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D foundation models, enabling few-shot learning for 6-DOF grasping with a dexterous hand.
 
 * Code (available soon)
 * Thesis (available soon)

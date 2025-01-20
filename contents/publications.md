@@ -1,64 +1,115 @@
-<!-- 1. **DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation**  
-   *Associated with Agile Robots SE*  
-   DexGANGrasp is an AI model that uses conditional GANs (cGANs) to generate and evaluate robot grasps, achieving higher success rates than previous methods. By incorporating LLMs and VLMs through DexAfford-Prompt, it enables task-oriented grasping for complex, real-world scenarios.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+# Projects
 
-2. **Universal Robotic Cell**  
-   *Associated with RICAIP - Research and Innovation Centre on Advanced Industrial Production*  
-   An industrial robotic cell powered by Deep Learning and 3D Computer Vision to detect, track, optimally grasp, and sort moving objects with complex geometries on a conveyor belt.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+## Neural Feature Fields for Language-Based Dexterous Robotic Manipulation 
 
-3. **5G Edge Vision System**  
-   *Associated with RICAIP - Research and Innovation Centre on Advanced Industrial Production*  
-   An artificial vision system based on CNNs and 3D pose estimation for a collaborative delta robot, using an internal campus 5G network and a GPU server. Sponsored by T-Mobile CZ (Deutsche Telekom) and Siemens.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+![DexF3RM](../static/assets/img/hithand.gif)
 
-4. **Luggage Carrying Task with the TIAGo Humanoid Robotic Platform**  
-   *Associated with Technical University of Munich*  
-   Integrated advanced robotic capabilities like perception, manipulation, navigation, and human-robot interaction using ROS. Achievements include autonomous detection and navigation to pick up luggage using CNNs, obstacle avoidance via SLAM, and operator following through Human-Robot Interaction.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D models foundation, enabling few-shot learning for 6-DOF grasping with a dexterous hand.
 
-5. **NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI**  
-   *Associated with Technical University of Munich*  
-   The project aims to make the NAO Robot play the UNO card game. It uses ROS to integrate sensing, deep learning-based card detection, bipedal locomotion, and decision-making based on a State Machine Agent.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+* Code (available soon)
+* Thesis (available soon)
 
-6. **Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation**  
-   *Associated with Technical University of Munich*  
-   A soft robotic glove for stroke patients, incorporating a CNN-based vision system to recognize objects and automatically adjust the hand's opening for grasping.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
 
-7. **Design and Implementation of 2-DoF Upper-Limb Exoskeleton with Combined Force and Position Control for Rehabilitation**  
-   *Associated with Technical University of Munich*  
-   This exoskeleton assists arm and wrist movements with position and force control, using an "intention detection algorithm" to predict user motions. The system enhances natural movement through muscle activity analysis and motion tracking.  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+## DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation
 
-8. **Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game**  
-   *Associated with Technical University of Munich*  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  
+![DexGANGrasp](../static/assets/img/tog.gif)
 
-9. **Fabrication of Soft Milli, Micro, and Nano Robots Based on Alginate Polymer Coating and Encapsulation**  
-   *Associated with Technical University of Munich*  
-   - [Code](#)  
-   - [Video](#)  
-   - [Paper](#)  -->
-  <!DOCTYPE html>
+DexGanGrasp is an AI model that uses cGANs to generate and evaluate robot grasps, achieving higher success rates than previous methods. By incorporating LLMs and VLMs through DexAfford-Prompt, it enables task-oriented grasping for more complex, real-world scenarios.
+
+* [Website](https://david-s-martinez.github.io/DexGANGrasp.io/)
+* [Video](https://youtu.be/egQaemeAy5k)
+* [Paper](https://www.arxiv.org/abs/2407.17348)
+
+
+## Universal Robotic Cell
+
+![Universal Robotic Cell](../static/assets/img/obj_detect.gif)
+
+An industrial robotic cell powered by Deep Learning and 3D Computer Vision to detect, track, optimally grasp and sort moving objects with complex geometries on a conveyor belt. Our developed pick and place architecture allows an industrial KUKA robot to be easily integrated with 3D computer vision methods and state of the art instance segmentation algorithms such as YOLACT for object detection. We showcase our solution on packets of different colors and sizes and contents.
+
+* [Code](https://github.com/testbedCIIRC/Robot-Vision-PickPlace)
+* [Video](https://www.youtube.com/watch?v=R7c1MT30IrA)
+* [Paper](https://ieeexplore.ieee.org/document/10260601)
+* [Article](https://testbed.ciirc.cvut.cz/labs/testbed/robotic-cells-ai-machine-vision)
+
+
+## 5G Edge Vision System
+
+![5G Edge Vision System](../static/assets/img/plane_detection_demo.gif)
+
+An artificial vision system based on CNNs and 3D pose estimation for a collaborative delta robot using an internal campus 5G network and a GPU server. The project was sponsored by T-Mobile CZ (Deutsche Telekom) and Siemens.
+
+* [Code](https://github.com/david-s-martinez/Deep-Vision-System-with-5G-Edge-GPU-Server)
+* [Article](https://testbed.ciirc.cvut.cz/labs/testbed/flexlink-delta/)
+
+
+## Luggage Carrying Task with the TIAGo Humanoid Robotic Platform
+
+![Luggage Carrying Task with the TIAGo Humanoid Robotic Platform](../static/assets/img/tiago.gif)
+
+Integration of advanced robotic capabilities such as perception, manipulation, navigation, and human-robot interaction using ROS. Key achievements include autonomous detection and navigation to pick up luggage (bag) based on CNNs, obstacle avoidance via SLAM, and following the operator to a designated location based on Human-Robot Interaction.
+
+* [Code](https://github.com/david-s-martinez/tiago_ws)
+* [Video](https://www.youtube.com/watch?v=Ih3iIqwa0Ek)
+* [Article](http://dx.doi.org/10.13140/RG.2.2.32927.88485)
+
+
+## NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI
+
+![NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI](../static/assets/img/nao.gif)
+
+The project aims to make the NAO Robot play the UNO card game. It uses ROS to integrate its different assets like sensing, deep learning based card detection, bipedal locomotion and decision-making based on a State Machine Agent.
+
+* [Code](https://github.com/david-s-martinez/Nao_ws)
+* [Video](https://www.youtube.com/watch?v=_0Dh0V_dilE)
+* [Article](http://dx.doi.org/10.13140/RG.2.2.19506.11201)
+
+
+## Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation
+
+![Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation](../static/assets/img/soft_exo.gif)
+
+This paper presents a soft robotic glove for stroke patients that incorporates a CNN-based computer vision system. This neural network allows the glove to intelligently recognize objects and automatically adjust the hand's opening for grasping.
+
+* [Code](https://github.com/david-s-martinez/CNN-based-soft-exoskeleton)
+* [Article](http://dx.doi.org/10.13140/RG.2.2.18303.52644)
+
+
+## Design and implementation of 2-DoF upper-limb exoskeleton with combined force and position control for rehabilitation
+
+![Design and implementation of 2-DoF upper-limb exoskeleton with combined force and position control for rehabilitation](../static/assets/img/exo_skin.gif)
+
+The exoskeleton assists arm and wrist movements with both position and force control, and uses an "intention detection algorithm" to predict the user's desired motions. This allows for more natural and responsive assistance, which was evaluated by measuring muscle activity and tracking the accuracy of executed movements.
+
+* [Code](https://github.com/david-s-martinez/Wearable-Robotics)
+* [Article](http://dx.doi.org/10.13140/RG.2.2.25014.41289)
+
+
+## Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks
+
+![Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks](../static/assets/img/leg_exo.gif)
+
+Design and implementation of a functional prototype of lower extremity brace actuation and its wireless communication control system. The design provides supportive torque and increases the range of motion after complications reducing muscular strength. The control system prototype facilitates elevating a leg, gradually followed by standing and slow walking. The main control modalities are based on an Artificial Neural Network (ANN). 
+
+* [Code](https://github.com/david-s-martinez/Exoskeleton-Control-Algorithms)
+* [Video](https://youtu.be/UmKADVIlhPU?si=6DHJGQz-yny-Oeq1&t=19)
+* [Article](https://www.researchgate.net/publication/346463112_Control_System_of_a_Lower-Extremity_Exoskeleton_Based_on_Artificial_Neural_Networks)
+
+
+## Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game
+
+![Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game](../static/assets/img/snake.gif)
+
+* [Code](https://github.com/david-s-martinez/reinforcement-learning-game)
+* [Poster](http://dx.doi.org/10.13140/RG.2.2.35504.26885)
+
+
+## Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation
+
+![Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation](../static/assets/img/chip.jpg)
+
+* [Article](http://dx.doi.org/10.13140/RG.2.2.35919.60328)
+  <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -238,4 +289,4 @@
 </div>
 
 </body>
-</html>
+</html> -->

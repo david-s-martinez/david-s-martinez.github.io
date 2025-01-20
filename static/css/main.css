@@ -111,12 +111,12 @@ section .main-body{
 
 /* Added to force desktop mode */
 body {
-    width: 1024px;          /* Set the fixed desktop width */
+    width: 100vw;          /* Set the fixed desktop width */
     margin: 0 auto;         /* Center horizontally */
     overflow-x: auto;       /* Allow horizontal scrolling if needed */
     position: relative;     /* Ensure positioning is consistent */
-    left: 50%;           /*   Start from the center of the viewport
-    /* transform: translateX(-50%); Shift left by half the width to center */
+    left: 50%;              /* Start from the center of the viewport */
+    transform: translateX(-50%); /* Shift left by half the width to center */
 }
 
 html {
@@ -127,7 +127,7 @@ html {
 
 @media screen and (max-width: 991px) {
     body {
-        width: 1024px !important;
+        width: 100vw !important;
     }
 
     #avatar {

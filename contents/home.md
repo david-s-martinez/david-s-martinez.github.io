@@ -3,7 +3,9 @@
 [![david-s-martinez](https://img.shields.io/badge/page-Github%20Profile-l?logo=github&label=david-s-martinez&color=blue&link=https%3A%2F%2Fgithub.com%2Fdavid-s-martinez
 )](https://github.com/david-s-martinez)
 
-I am a student of the Elite Master’s program in Neuroengineering at the [School of Computation, Information and Technology](https://www.cit.tum.de/en/cit/home/) of the Technical University of Munich (TUM), where I am mentored by [Prof. Gordon Cheng](https://www.professoren.tum.de/en/cheng-gordon). Currently, I am immersed in groundbreaking research for my thesis, *"Neural Feature Fields for Language-Based Dexterous Robotic Manipulation,"* a collaboration between TUM and [Agile Robots SE](https://www.agile-robots.com/en/). This work is supervised by [Qian Feng](https://www.ce.cit.tum.de/air/people/qian-feng-msc/) and [Prof. Alois C. Knoll](https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/), with co-advisorship from [Jianxiang Feng](https://jianxiangfeng.github.io/).
+I am a dedicated R&D engineer with expertise at the intersection of AI, biomedical technology, and intelligent robotics. I leverage these skills to engineer solutions for Medicine and Industry 4.0, driven by a passion for advancing AI to improve medical outcomes and industrial processes. 
+
+As a student in the Elite Master’s program in Neuroengineering at the [School of Computation, Information and Technology](https://www.cit.tum.de/en/cit/home/) at the Technical University of Munich (TUM), I am mentored by [Prof. Gordon Cheng](https://www.professoren.tum.de/en/cheng-gordon). My current research focuses on my thesis, *"Neural Feature Fields for Language-Based Dexterous Robotic Manipulation,"* a groundbreaking collaboration between TUM and [Agile Robots SE](https://www.agile-robots.com/en/). This work is supervised by [Qian Feng](https://www.ce.cit.tum.de/air/people/qian-feng-msc/) and [Prof. Alois C. Knoll](https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/), with co-advisorship from [Jianxiang Feng](https://jianxiangfeng.github.io/).
 
 #### Email
 david.martinez@tum.de

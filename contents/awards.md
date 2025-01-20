@@ -22,7 +22,7 @@
     - [*German President, Frank-Walter Steinmeier*](https://ricaip.eu/german-president-in-ricaip/)
 
 ### Awards
-- **Winner** - Porsche Engineering Autonomous Driving Contest  
+- **Winner** - [Porsche Engineering Autonomous Driving Contest](https://www.youtube.com/watch?v=wrHd0e-xkkw)  
   *Issued by Porsche Engineering · May 2022*
 
 - **Finalist** - European Healthcare Hackathon 2021  

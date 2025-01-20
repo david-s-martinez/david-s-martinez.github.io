@@ -110,24 +110,26 @@ section .main-body{
 }
 
 /* Added to force desktop mode */
+/* Remove fixed width but maintain desktop behavior */
 body {
-    width: 1024px;
-    margin: 0 auto;
-    overflow-x: auto;
+    margin: 0 auto; /* Center the content */
+    max-width: 1024px; /* Constrain the width to desktop size but allow flexibility */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 html {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    touch-action: manipulation;
+    -webkit-text-size-adjust: none; /* Prevent font resizing on iOS */
+    -ms-text-size-adjust: none;    /* Prevent font resizing on IE Mobile */
+    touch-action: manipulation;   /* Disable pinch-to-zoom */
 }
 
 @media screen and (max-width: 991px) {
+    /* Ensure desktop mode styling for smaller screens */
     body {
-        width: 1024px !important;
+        max-width: 1024px !important; /* Constrain width on smaller devices */
     }
 
     #avatar {
-        margin: 0 auto !important;
+        margin: 0 auto !important; /* Prevent shifting for avatar on smaller screens */
     }
 }

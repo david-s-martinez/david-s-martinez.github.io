@@ -115,7 +115,7 @@ body {
     margin: 0 auto;         /* Center horizontally */
     overflow-x: auto;       /* Allow horizontal scrolling if needed */
     position: relative;     /* Ensure positioning is consistent */
-    left: 50%;              /* Start from the center of the viewport */
+    /* left: 50%;              /* Start from the center of the viewport */
     transform: translateX(-50%); /* Shift left by half the width to center */
 }
 

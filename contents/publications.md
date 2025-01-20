@@ -2,7 +2,7 @@
 
 ## Neural Feature Fields for Language-Based Dexterous Robotic Manipulation 
 
-![DexF3RM](../static/assets/img/hithand.gif)
+<img src="../static/assets/img/hithand.gif" alt="DexF3RM" width="200"> 
 
 Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D models foundation, enabling few-shot learning for 6-DOF grasping with a dexterous hand.
 
@@ -12,7 +12,7 @@ Image models trained with self-supervision and language supervision possess exte
 
 ## DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation
 
-![DexGANGrasp](../static/assets/img/tog.gif)
+<img src="../static/assets/img/tog.gif" alt="DexGANGrasp" width="300">
 
 DexGanGrasp is an AI model that uses cGANs to generate and evaluate robot grasps, achieving higher success rates than previous methods. By incorporating LLMs and VLMs through DexAfford-Prompt, it enables task-oriented grasping for more complex, real-world scenarios.
 
@@ -23,7 +23,7 @@ DexGanGrasp is an AI model that uses cGANs to generate and evaluate robot grasps
 
 ## Universal Robotic Cell
 
-![Universal Robotic Cell](../static/assets/img/obj_detect.gif)
+<img src="../static/assets/img/obj_detect.gif" alt="Universal Robotic Cell" width="200">
 
 An industrial robotic cell powered by Deep Learning and 3D Computer Vision to detect, track, optimally grasp and sort moving objects with complex geometries on a conveyor belt. Our developed pick and place architecture allows an industrial KUKA robot to be easily integrated with 3D computer vision methods and state of the art instance segmentation algorithms such as YOLACT for object detection. We showcase our solution on packets of different colors and sizes and contents.
 
@@ -35,7 +35,7 @@ An industrial robotic cell powered by Deep Learning and 3D Computer Vision to de
 
 ## 5G Edge Vision System
 
-![5G Edge Vision System](../static/assets/img/plane_detection_demo.gif)
+<img src="../static/assets/img/plane_detection_demo.gif" alt="5G Edge Vision System" width="300">
 
 An artificial vision system based on CNNs and 3D pose estimation for a collaborative delta robot using an internal campus 5G network and a GPU server. The project was sponsored by T-Mobile CZ (Deutsche Telekom) and Siemens.
 
@@ -45,7 +45,7 @@ An artificial vision system based on CNNs and 3D pose estimation for a collabora
 
 ## Luggage Carrying Task with the TIAGo Humanoid Robotic Platform
 
-![Luggage Carrying Task with the TIAGo Humanoid Robotic Platform](../static/assets/img/tiago.gif)
+<img src="../static/assets/img/tiago.gif" alt="Luggage Carrying Task with the TIAGo Humanoid Robotic Platform" width="300">
 
 Integration of advanced robotic capabilities such as perception, manipulation, navigation, and human-robot interaction using ROS. Key achievements include autonomous detection and navigation to pick up luggage (bag) based on CNNs, obstacle avoidance via SLAM, and following the operator to a designated location based on Human-Robot Interaction.
 
@@ -56,7 +56,7 @@ Integration of advanced robotic capabilities such as perception, manipulation, n
 
 ## NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI
 
-![NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI](../static/assets/img/nao.gif)
+<img src="../static/assets/img/nao.gif" alt="NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI" width="300">
 
 The project aims to make the NAO Robot play the UNO card game. It uses ROS to integrate its different assets like sensing, deep learning based card detection, bipedal locomotion and decision-making based on a State Machine Agent.
 
@@ -67,7 +67,7 @@ The project aims to make the NAO Robot play the UNO card game. It uses ROS to in
 
 ## Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation
 
-![Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation](../static/assets/img/soft_exo.gif)
+<img src="../static/assets/img/soft_exo.gif" alt="Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation" width="300">
 
 This paper presents a soft robotic glove for stroke patients that incorporates a CNN-based computer vision system. This neural network allows the glove to intelligently recognize objects and automatically adjust the hand's opening for grasping.
 
@@ -77,7 +77,7 @@ This paper presents a soft robotic glove for stroke patients that incorporates a
 
 ## Design and implementation of 2-DoF upper-limb exoskeleton with combined force and position control for rehabilitation
 
-![Design and implementation of 2-DoF upper-limb exoskeleton with combined force and position control for rehabilitation](../static/assets/img/exo_skin.gif)
+<img src="../static/assets/img/exo_skin.gif" alt="Design and implementation of 2-DoF upper-limb exoskeleton with combined force and position control for rehabilitation" width="300">
 
 The exoskeleton assists arm and wrist movements with both position and force control, and uses an "intention detection algorithm" to predict the user's desired motions. This allows for more natural and responsive assistance, which was evaluated by measuring muscle activity and tracking the accuracy of executed movements.
 
@@ -87,7 +87,7 @@ The exoskeleton assists arm and wrist movements with both position and force con
 
 ## Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks
 
-![Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks](../static/assets/img/leg_exo.gif)
+<img src="../static/assets/img/leg_exo.gif" alt="Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks" width="300">
 
 Design and implementation of a functional prototype of lower extremity brace actuation and its wireless communication control system. The design provides supportive torque and increases the range of motion after complications reducing muscular strength. The control system prototype facilitates elevating a leg, gradually followed by standing and slow walking. The main control modalities are based on an Artificial Neural Network (ANN). 
 
@@ -98,7 +98,7 @@ Design and implementation of a functional prototype of lower extremity brace act
 
 ## Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game
 
-![Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game](../static/assets/img/snake.gif)
+<img src="../static/assets/img/snake.gif" alt="Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game" width="300">
 
 * [Code](https://github.com/david-s-martinez/reinforcement-learning-game)
 * [Poster](http://dx.doi.org/10.13140/RG.2.2.35504.26885)
@@ -106,10 +106,13 @@ Design and implementation of a functional prototype of lower extremity brace act
 
 ## Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation
 
-![Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation](../static/assets/img/chip.jpg)
+<!-- ![Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation](../static/assets/img/chip.jpg) -->
+
+<img src="../static/assets/img/chip.jpg" alt="Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation" width="300">
 
 * [Article](http://dx.doi.org/10.13140/RG.2.2.35919.60328)
-  <!-- <!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

@@ -1,4 +1,3 @@
-# Projects
 
 ## Neural Feature Fields for Language-Based Dexterous Robotic Manipulation 
 

@@ -108,7 +108,6 @@
     <div class="project-content">
         <h3>Neural Feature Fields for Language-Based Dexterous Robotic Manipulation</h3>
         <p>Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D models foundation, enabling few-shot learning for 6-DOF grasping with a dexterous hand.</p>
-        
         <div class="links">
             <a href="">Code (available soon)</a>
             <a href="">Thesis (available soon)</a>

@@ -62,7 +62,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, minimum-scale=0.2, maximum-scale=3, user-scalable=yes" />
     <title>Projects</title>
     <style>
         body {

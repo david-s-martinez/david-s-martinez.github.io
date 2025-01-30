@@ -31,7 +31,7 @@
 
    <img src="../static/assets/img/habeck1.jpg" alt="vision" width="400">
 
-   <img src="../static/assets/img/habeck2.jpg" alt="vision2" width="400">
+   <img src="../static/assets/img/habeck2.JPG" alt="vision2" width="400">
 
    <img src="../static/assets/img/brno_demo.jpeg" alt="vision1" width="400">
 

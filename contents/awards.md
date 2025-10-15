@@ -1,5 +1,5 @@
 ### Conferences and Presentations
-- [**LensDFF: Language-enhanced Sparse Feature Distillation for Efficient Few-Shot Dexterous Manipulationn**](https://david-s-martinez.github.io/DexGANGrasp.io/)  
+- [**LensDFF: Language-enhanced Sparse Feature Distillation for Efficient Few-Shot Dexterous Manipulationn**](https://david-s-martinez.github.io/LensDFF/)  
   *IEEE/RSJ IROS 2025*
 
 - [**DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation**](https://david-s-martinez.github.io/DexGANGrasp.io/)  

@@ -7,6 +7,8 @@ I am a Robot Learning Engineer focused on enabling generalizable dexterous manip
 
 Previously, I studied the Elite Master of Science program in Neural Engineering at the [School of Computation, Information and Technology](https://www.cit.tum.de/en/cit/home/) of the Technical University of Munich (TUM) where I was mentored by [Prof. Gordon Cheng](https://www.professoren.tum.de/en/cheng-gordon). My thesis, *"Neural Feature Fields for Language-Based Dexterous Robotic Manipulation,"* focused on language based dexterous grasping and was done at TUM and [Agile Robots SE](https://www.agile-robots.com/en/). This work was supervised by [Qian Feng](https://www.ce.cit.tum.de/air/people/qian-feng-msc/) and [Prof. Alois C. Knoll](https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/), with co-advisorship from [Jianxiang Feng](https://jianxiangfeng.github.io/).
 
+#### Expertise
+
 In general, my work combines visual, tactile, proprioceptive and semantic understanding of the real world with Deep Learning to allow robots to perform dexterous manipulation based on human instructions.
 
 I have developed deep foundation models for generative robotic grasping trained on massive-scale synthetic datasets from simulation. Then integrated them with LLMs and VLMs for prompt based one-shot grasping.

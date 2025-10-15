@@ -1,7 +1,16 @@
+## LensDFF: Language-enhanced Sparse Feature Distillation for Efficient Few-Shot Dexterous Manipulation
+
+<img src="../static/assets/img/hithand.gif" alt="DexGANGrasp" width="400">
+
+Language-ENhanced Sparse Distilled Feature Field (LensDFF), which efficiently distills view-consistent 2D features onto 3D points using our novel language-enhanced feature fusion strategy, thereby enabling single-view few-shot generalization.
+
+* [Website](https://david-s-martinez.github.io/LensDFF/)
+* [Video](https://www.youtube.com/embed/zNSXlHfev7U?si=mFPrD4jdSSLXlhfD)
+* [Paper](https://arxiv.org/abs/2503.03890)
 
 ## Neural Feature Fields for Language-Based Dexterous Robotic Manipulation 
 
-<img src="../static/assets/img/hithand.gif" alt="DexF3RM" width="400"> 
+<img src="../static/assets/img/dexf3rm.png" alt="DexF3RM" width="400"> 
 
 Image models trained with self-supervision and language supervision possess extensive world knowledge, yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This research combines precise 3D geometry with rich semantic information from 2D foundation models, enabling few-shot learning for 6-DOF grasping with a dexterous hand.
 

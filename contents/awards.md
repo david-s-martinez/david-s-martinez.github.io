@@ -32,9 +32,9 @@
   - [*Executive Vice-President of European Commission, Frans Timmermans Official Visit*](https://ricaip.eu/timmermans-visited-ricaip/)
   - [*German President, Frank-Walter Steinmeier Official Visit*](https://ricaip.eu/german-president-in-ricaip/)
 
-   <img src="../static/assets/img/habeck1.jpg" alt="vision" width="400">
-
    <img src="../static/assets/img/habeck2.JPG" alt="vision2" width="400">
+
+   <img src="../static/assets/img/habeck1.jpg" alt="vision" width="400">
 
    <img src="../static/assets/img/brno_demo.jpeg" alt="vision1" width="400">
 

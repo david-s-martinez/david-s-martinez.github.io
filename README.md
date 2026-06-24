@@ -50,7 +50,8 @@ static file server works. From the project root:
 
 ```bash
 # Option 1 — Python (no install needed on macOS/Linux)
-python3 -m http.server 8000
+# Free port 8000 first (kills any server already bound to it), then serve:
+lsof -ti tcp:8000 | xargs kill -9 2>/dev/null; python3 -m http.server 8000
 
 # Option 2 — Node
 npx serve .

@@ -33,7 +33,7 @@
 
 .project-item > .project-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--onyx);
   padding: 15px;
   border-radius: 16px;
   box-shadow: var(--shadow-1);
@@ -103,7 +103,7 @@
   padding: 5px 12px;
   font-size: var(--fs-7);
   color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
+  background: var(--onyx);
   border: 1px solid var(--jet);
   border-radius: 8px;
   transition: var(--transition-1);
@@ -141,17 +141,51 @@
 
 .timeline-media {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
   margin-top: 14px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--vegas-gold) var(--onyx);
 }
 
 .timeline-media img {
-  width: 100%;
-  max-width: 240px;
-  height: auto;
+  flex: 0 0 auto;
+  width: auto;
+  height: 200px;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: var(--shadow-1);
+  scroll-snap-align: start;
+}
+
+/* Webkit scrollbar styling */
+.timeline-media::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-media::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 10px;
+}
+
+.timeline-media::-webkit-scrollbar-thumb {
+  background: var(--vegas-gold);
+  border-radius: 10px;
+}
+
+.timeline-media::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-yellow-crayola);
+}
+
+/* Hint that there's more to scroll: subtle fade on the right edge */
+.timeline-media:not(.no-scroll) {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent 100%);
 }
 
 .timeline-item .timeline-text a {
@@ -200,7 +234,7 @@
   padding: 6px 16px;
   font-size: var(--fs-6);
   color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
+  background: var(--onyx);
   border: 1px solid var(--jet);
   border-radius: 10px;
 }

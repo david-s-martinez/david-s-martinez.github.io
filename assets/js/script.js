@@ -157,3 +157,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// resume timeline media: only show scroll affordance when content overflows
+const mediaStrips = document.querySelectorAll(".timeline-media");
+
+const updateMediaScroll = function () {
+  for (let i = 0; i < mediaStrips.length; i++) {
+    const strip = mediaStrips[i];
+    const overflowing = strip.scrollWidth > strip.clientWidth + 1;
+    strip.classList.toggle("no-scroll", !overflowing);
+  }
+};
+
+window.addEventListener("load", updateMediaScroll);
+window.addEventListener("resize", updateMediaScroll);
+updateMediaScroll();

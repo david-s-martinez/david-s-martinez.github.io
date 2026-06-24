@@ -22,7 +22,7 @@ My expertise further includes Deep Learning based object detection, instance seg
 My goal is to contribute to a world with safe, friendly and intelligent robots among us.
 
 #### Email
-david.martinez@tum.de
+david_s_martinez@outlook.com
 
 #### Education
 - Technical University of Munich, Germany — Elite M.Sc. (Hons)  Neuro-Engineering (Computational Neuroscience, AI & Robotics), 2022-2025

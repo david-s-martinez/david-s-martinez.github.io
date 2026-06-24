@@ -12,6 +12,26 @@
   display: inline;
 }
 
+/* Theme all in-text links with the accent color and keep visited links the
+ * same (the browser default turns them an unreadable dark-blue/purple). */
+.about-text a,
+.about-text a:visited,
+.timeline-text a,
+.timeline-text a:visited,
+.timeline-item-title a,
+.timeline-item-title a:visited,
+.timeline-sublist a,
+.timeline-sublist a:visited {
+  color: var(--orange-yellow-crayola);
+}
+
+.about-text a:hover,
+.timeline-text a:hover,
+.timeline-item-title a:hover,
+.timeline-sublist a:hover {
+  color: var(--vegas-gold);
+}
+
 /* ---------------------------------------------------------------------------
  * About — "What I'm doing" service emojis (replacing the template SVG icons)
  * ------------------------------------------------------------------------ */
@@ -65,6 +85,20 @@
   object-fit: contain;
 }
 
+/* Stack multiple media vertically inside one project image area.
+ * Higher specificity (.project-img.project-img--stack) so it beats the
+ * responsive `aspect-ratio` rule inside the min-width: 580px media query. */
+.project-card .project-img.project-img--stack {
+  aspect-ratio: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card .project-img.project-img--stack img {
+  height: auto;
+}
+
 .project-card .project-info {
   display: flex;
   flex-direction: column;
@@ -86,6 +120,13 @@
   font-weight: var(--fw-400);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.project-card .project-venue {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  font-style: italic;
 }
 
 .project-card .project-desc {

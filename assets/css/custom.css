@@ -1,0 +1,215 @@
+/**
+ * Custom overrides for David Martinez's portfolio.
+ * Builds on the vCard template theme (see style.css for the design tokens).
+ */
+
+/* The template sets `a { display: block }` globally, which forces every link
+ * onto its own line. Restore inline flow for links inside running text. */
+.about-text a,
+.timeline-text a,
+.timeline-item-title a,
+.timeline-sublist a {
+  display: inline;
+}
+
+/* ---------------------------------------------------------------------------
+ * About — "What I'm doing" service emojis (replacing the template SVG icons)
+ * ------------------------------------------------------------------------ */
+
+.service-emoji {
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------
+ * Portfolio — detailed project cards (image + description + links)
+ * ------------------------------------------------------------------------ */
+
+.project-list {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.project-item > .project-card {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.project-card .project-img {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--eerie-black-1);
+}
+
+.project-card .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 5px 8px 8px;
+}
+
+.project-card .project-title {
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  line-height: 1.3;
+  text-transform: none;
+}
+
+.project-card .project-category {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card .project-desc {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  font-size: var(--fs-7);
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  border: 1px solid var(--jet);
+  border-radius: 8px;
+  transition: var(--transition-1);
+}
+
+.project-links a:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+}
+
+.project-links span.disabled {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  font-size: var(--fs-7);
+  color: var(--light-gray-70);
+  border: 1px dashed var(--jet);
+  border-radius: 8px;
+}
+
+/* Two-column card on wider viewports: image left, text right */
+@media (min-width: 580px) {
+  .project-card {
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+  }
+  .project-card .project-img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Resume — images inside timeline items (conferences, awards)
+ * ------------------------------------------------------------------------ */
+
+.timeline-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.timeline-media img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-1);
+}
+
+.timeline-item .timeline-text a {
+  color: var(--orange-yellow-crayola);
+}
+
+.timeline-sublist {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 14px;
+}
+
+.timeline-sublist li {
+  position: relative;
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.8;
+}
+
+.timeline-sublist li::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--vegas-gold);
+}
+
+.timeline-sublist a { color: var(--orange-yellow-crayola); }
+
+/* ---------------------------------------------------------------------------
+ * Research interests / focus tags
+ * ------------------------------------------------------------------------ */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 18px;
+}
+
+.tag-list li {
+  padding: 6px 16px;
+  font-size: var(--fs-6);
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  border: 1px solid var(--jet);
+  border-radius: 10px;
+}
+
+/* Sidebar copyright */
+.sidebar-copyright {
+  margin-top: 16px;
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  text-align: center;
+}
+.sidebar-copyright a { color: var(--vegas-gold); }

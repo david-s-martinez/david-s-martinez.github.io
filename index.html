@@ -2,174 +2,960 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.75, minimum-scale=0.2, maximum-scale=3, user-scalable=yes" />
-    <meta name="description" content="David Martinez" />
-    <meta name="author" content="david-s-martinez" />
-    <title id="title"></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="David Martinez — AI & Robotics Engineer">
+  <meta name="author" content="david-s-martinez">
+  <title>David Martinez — AI &amp; Robotics Engineer</title>
 
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
 
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
+<body>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo.png" alt="David Martinez" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="David Martinez">David Martinez</h1>
+
+          <p class="title">AI &amp; Robotics Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:david.martinez@tum.de" class="contact-link">david.martinez@tum.de</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/david-s-martinez" class="contact-link" target="_blank" rel="noopener">david-s-martinez</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Munich, Germany</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/david-s-martinez" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="sidebar-copyright">
+          &copy; David Martinez 2024–2025. All Rights Reserved.<br>
+          <a href="https://github.com/david-s-martinez/david-s-martinez.github.io/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        </p>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Robot Learning Engineer focused on enabling generalizable dexterous manipulation across diverse
+            humanoid robot embodiments (arms/hands), tasks and natural human instructions.
+          </p>
+
+          <p>
+            Previously, I studied the Elite Master of Science program in Neural Engineering at the
+            <a href="https://www.cit.tum.de/en/cit/home/" target="_blank" rel="noopener">School of Computation, Information and Technology</a>
+            of the Technical University of Munich (TUM) where I was mentored by
+            <a href="https://www.professoren.tum.de/en/cheng-gordon" target="_blank" rel="noopener">Prof. Gordon Cheng</a>.
+            My thesis, <em>"Neural Feature Fields for Language-Based Dexterous Robotic Manipulation,"</em> focused on
+            language based dexterous grasping and was done at TUM and
+            <a href="https://www.agile-robots.com/en/" target="_blank" rel="noopener">Agile Robots SE</a>. This work was
+            supervised by <a href="https://www.ce.cit.tum.de/air/people/qian-feng-msc/" target="_blank" rel="noopener">Qian Feng</a>
+            and <a href="https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/" target="_blank" rel="noopener">Prof. Alois C. Knoll</a>,
+            with co-advisorship from <a href="https://jianxiangfeng.github.io/" target="_blank" rel="noopener">Jianxiang Feng</a>.
+          </p>
+
+          <p>
+            In general, my work combines visual, tactile, proprioceptive and semantic understanding of the real world
+            with Deep Learning to allow robots to perform dexterous manipulation based on human instructions. I have
+            developed deep foundation models for generative robotic grasping trained on massive-scale synthetic datasets
+            from simulation, then integrated them with LLMs and VLMs for prompt based one-shot grasping. I have also
+            combined imitation learning with dexterous grasp optimization from 3D vision-language features, to enable
+            language and demonstration driven few-shot grasping, and applied deep reinforcement learning to train
+            in-hand manipulation policies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span class="service-emoji" role="img" aria-label="robotic arm">🦾</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Dexterous Manipulation</h4>
+
+                <p class="service-item-text">
+                  Generalizable dexterous grasping across humanoid robot embodiments, guided by natural language
+                  instructions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span class="service-emoji" role="img" aria-label="brain">🧠</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robot Learning &amp; Foundation Models</h4>
+
+                <p class="service-item-text">
+                  Generative grasping models trained on massive synthetic datasets, integrated with LLMs/VLMs, plus
+                  imitation and reinforcement learning.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span class="service-emoji" role="img" aria-label="eye">👁️</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">3D Computer Vision &amp; Perception</h4>
+
+                <p class="service-item-text">
+                  Object detection, instance segmentation, 3D pose estimation and scene reconstruction for robotic
+                  tasks.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <span class="service-emoji" role="img" aria-label="globe">🌐</span>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Simulation &amp; Sim-to-Real Deployment</h4>
+
+                <p class="service-item-text">
+                  Large scale robotic simulators, sim-to-real transfer, teleoperation, robot agent control and AI model
+                  deployment.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Technical University of Munich, Germany</h4>
+              <span>2022 — 2025</span>
+              <p class="timeline-text">
+                Elite M.Sc. (Hons) in Neuro-Engineering — Computational Neuroscience, AI &amp; Robotics.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Czech Technical University in Prague, Czechia</h4>
+              <span>2017 — 2021</span>
+              <p class="timeline-text">
+                B.Sc. in Biomedical &amp; Clinical Technology — Bio-Mechatronics, Computational Imaging/Vision &amp; ML.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Coimbra, Portugal</h4>
+              <span>2019</span>
+              <p class="timeline-text">
+                Erasmus+ Summer Exchange — Mechatronics, Robotics, and Automation Engineering.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Conferences &amp; Presentations</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://david-s-martinez.github.io/LensDFF/" target="_blank" rel="noopener">LensDFF: Language-enhanced Sparse Feature Distillation for Efficient Few-Shot Dexterous Manipulation</a>
+              </h4>
+              <span>IEEE/RSJ IROS 2025</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://david-s-martinez.github.io/DexGANGrasp.io/" target="_blank" rel="noopener">DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation</a>
+              </h4>
+              <span>IEEE/RAS Humanoids 2024</span>
+              <div class="timeline-media">
+                <img src="./assets/images/dexgan.jpeg" alt="DexGANGrasp" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.researchgate.net/publication/374284646_Automatic_Workspace_Calibration_Using_Homography_for_Pick_and_Place" target="_blank" rel="noopener">Automatic Workspace Calibration Using Homography for Pick &amp; Place</a>
+              </h4>
+              <span>IEEE CASE 2023</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.researchgate.net/publication/346463112_Control_System_of_a_Lower-Extremity_Exoskeleton_Based_on_Artificial_Neural_Networks" target="_blank" rel="noopener">Control System of Lower-Extremity Exoskeleton Based on ANN</a>
+              </h4>
+              <span>pHealth 2020</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Universal Robotic Cell — Demos and Presentations</h4>
+              <ul class="timeline-sublist">
+                <li><a href="https://ricaip.eu/events/researchers-night-2022/" target="_blank" rel="noopener">Researchers Night 2022</a></li>
+                <li><a href="https://ricaip.eu/events/us-eu-workshop-on-intelligent-manufacturing/" target="_blank" rel="noopener">US-EU Workshop on Intelligent Manufacturing 2022</a></li>
+                <li><a href="https://wodes2022.ciirc.cvut.cz/" target="_blank" rel="noopener">WODES 2022</a></li>
+                <li><a href="https://ricaip.eu/ricaip-days-2022/" target="_blank" rel="noopener">RICAIP Days 2022</a></li>
+                <li><a href="https://x.com/RICAIP_EU/status/1441492384638984194" target="_blank" rel="noopener">Researchers Night 2021</a></li>
+              </ul>
+              <div class="timeline-media">
+                <img src="./assets/images/team.jpg" alt="Universal Robotic Cell team" loading="lazy">
+                <img src="./assets/images/demo.jpg" alt="Universal Robotic Cell demo" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">5G Edge Vision System — Demos and Presentations</h4>
+              <ul class="timeline-sublist">
+                <li><a href="https://ricaip.eu/events/brno-msv-2022/" target="_blank" rel="noopener">Brno International Engineering Fair 2022</a></li>
+                <li><a href="https://ricaip.eu/german-vice-chancellor-habeck-visit/" target="_blank" rel="noopener">German Vice Chancellor, Robert Habeck Official Visit</a></li>
+                <li><a href="https://ricaip.eu/skoda-auto-visit-august22/" target="_blank" rel="noopener">ŠKODA AUTO Official Visit</a></li>
+                <li><a href="https://ricaip.eu/timmermans-visited-ricaip/" target="_blank" rel="noopener">Executive Vice-President of European Commission, Frans Timmermans Official Visit</a></li>
+                <li><a href="https://ricaip.eu/german-president-in-ricaip/" target="_blank" rel="noopener">German President, Frank-Walter Steinmeier Official Visit</a></li>
+              </ul>
+              <div class="timeline-media">
+                <img src="./assets/images/habeck2.JPG" alt="Habeck visit" loading="lazy">
+                <img src="./assets/images/habeck1.jpg" alt="Habeck visit" loading="lazy">
+                <img src="./assets/images/brno_demo.jpeg" alt="Brno demo" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.facebook.com/roboticmindsecuador/posts/pfbid0BCDmhkLMNg1HFDQUSJAVgotyLnMWuXWe3wQmFL3bL77G9QAjgwZUbNdjm72v8fzXl" target="_blank" rel="noopener">Talk: AI and Exoskeletons (Spanish) — Robotic Minds 2021</a>
+              </h4>
+              <div class="timeline-media">
+                <img src="./assets/images/talk.jpg" alt="Robotic Minds talk" loading="lazy">
+              </div>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Winner — <a href="https://www.youtube.com/watch?v=wrHd0e-xkkw" target="_blank" rel="noopener">Porsche Engineering Autonomous Driving Contest</a>
+              </h4>
+              <span>Issued by Porsche Engineering · May 2022</span>
+              <div class="timeline-media">
+                <img src="./assets/images/porsche.jpg" alt="Porsche Engineering contest" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Finalist — European Healthcare Hackathon 2021</h4>
+              <span>Issued by CEE Hacks · Jan 2021</span>
+              <p class="timeline-text">
+                Developed a diabetic ulcer detection system prototype, <strong>DiaVision</strong>, using deep learning
+                and computer vision techniques. It measures the temperature, size, area, and rotation of ulcers in real
+                time and generates detailed reports.
+              </p>
+              <div class="timeline-media">
+                <img src="./assets/images/ulcer.png" alt="DiaVision ulcer detection" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Finalist — Global Smart Health Hackathon Prague 2020</h4>
+              <span>Issued by CEE Hacks · Jan 2020</span>
+              <p class="timeline-text">
+                Created a TensorFlow-based computer vision solution capable of detecting patients and doctors in an
+                intensive care unit.
+              </p>
+              <div class="timeline-media">
+                <img src="./assets/images/patients.png" alt="ICU patient detection" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Finalist — RobotCraft ROS Maze Solving Challenge 2019</h4>
+              <span>Issued by Ingeniarius and University of Coimbra · Jan 2019</span>
+              <div class="timeline-media">
+                <img src="./assets/images/robotcraft.gif" alt="RobotCraft maze solving" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Special Purpose Scholarship Award</h4>
+              <span>Faculty of Biomedical Engineering, CTU Prague · Jan 2019 – 2020</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Infomatrix World Finals 2017, Bucharest, Romania</h4>
+              <span>Issued by Lumina Foundation · May 2017</span>
+              <ul class="timeline-sublist">
+                <li><strong>Silver Medal</strong> — Sumo Robotics</li>
+                <li><strong>Bronze Medal</strong> — Robotics Lego Line Follower</li>
+                <li><strong>Bronze Medal</strong> — Software Development</li>
+              </ul>
+              <div class="timeline-media">
+                <img src="./assets/images/infomatrix_ro.jpg" alt="Infomatrix World Finals" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Gold Medal — Software Development, Infomatrix South America 2017</h4>
+              <span>Issued by SOLACYT · Jan 2017</span>
+              <p class="timeline-text">
+                Developed "MedWeb", an Android app for managing health services and medical data, supporting Quito,
+                Ecuador's health IT infrastructure. Implemented in Android Studio (Java) with SQLite, Google Maps,
+                Gmail, and Skype APIs.
+              </p>
+              <div class="timeline-media">
+                <img src="./assets/images/medweb.jpg" alt="MedWeb app" loading="lazy">
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Honor Roll Member</h4>
+              <span>Issued by Marie Clarac School</span>
+              <p class="timeline-text">Achieved the 4th highest GPA.</p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Research Interests</h3>
+
+          <ul class="tag-list content-card">
+            <li>Deep Learning</li>
+            <li>Artificial Intelligence</li>
+            <li>Robotics</li>
+            <li>Neural Engineering</li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Manipulation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Vision</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Humanoids</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Bio-Robotics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Learning &amp; Control</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">Conferences & Awards</a>
-                    </li>
 
-                </ul>
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Manipulation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Vision</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Humanoids</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Bio-Robotics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Learning &amp; Control</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="manipulation">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/hithand.gif" alt="LensDFF" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">LensDFF: Language-enhanced Sparse Feature Distillation for Efficient Few-Shot Dexterous Manipulation</h3>
+                  <p class="project-category">Dexterous Manipulation</p>
+                  <p class="project-desc">
+                    Language-ENhanced Sparse Distilled Feature Field (LensDFF), which efficiently distills view-consistent
+                    2D features onto 3D points using our novel language-enhanced feature fusion strategy, thereby enabling
+                    single-view few-shot generalization.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://david-s-martinez.github.io/LensDFF/" target="_blank" rel="noopener">Website</a>
+                    <a href="https://www.youtube.com/embed/zNSXlHfev7U?si=mFPrD4jdSSLXlhfD" target="_blank" rel="noopener">Video</a>
+                    <a href="https://arxiv.org/abs/2503.03890" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="manipulation">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/dexf3rm.png" alt="Neural Feature Fields" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Neural Feature Fields for Language-Based Dexterous Robotic Manipulation</h3>
+                  <p class="project-category">Dexterous Manipulation</p>
+                  <p class="project-desc">
+                    Image models trained with self-supervision and language supervision possess extensive world knowledge,
+                    yet they often fall short in providing the detailed 3D understanding necessary for robotic tasks. This
+                    research combines precise 3D geometry with rich semantic information from 2D foundation models, enabling
+                    few-shot learning for 6-DOF grasping with a dexterous hand.
+                  </p>
+                  <div class="project-links">
+                    <span class="disabled">Code (available soon)</span>
+                    <span class="disabled">Thesis (available soon)</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="manipulation">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/tog.gif" alt="DexGANGrasp" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">DexGANGrasp: Dexterous Generative Adversarial Grasping Synthesis for Task-Oriented Manipulation</h3>
+                  <p class="project-category">Dexterous Manipulation</p>
+                  <p class="project-desc">
+                    DexGanGrasp is an AI model that uses cGANs to generate and evaluate robot grasps, achieving higher
+                    success rates than previous methods. By incorporating LLMs and VLMs through DexAfford-Prompt, it enables
+                    task-oriented grasping for more complex, real-world scenarios.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://david-s-martinez.github.io/DexGANGrasp.io/" target="_blank" rel="noopener">Website</a>
+                    <a href="https://youtu.be/egQaemeAy5k" target="_blank" rel="noopener">Video</a>
+                    <a href="https://www.arxiv.org/abs/2407.17348" target="_blank" rel="noopener">Paper</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="vision">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/obj_detect.gif" alt="Universal Robotic Cell" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Universal Robotic Cell</h3>
+                  <p class="project-category">Robotic Vision</p>
+                  <p class="project-desc">
+                    An industrial robotic cell powered by Deep Learning and 3D Computer Vision to detect, track, optimally
+                    grasp and sort moving objects with complex geometries on a conveyor belt. Our developed pick and place
+                    architecture allows an industrial KUKA robot to be easily integrated with 3D computer vision methods and
+                    state of the art instance segmentation algorithms such as YOLACT for object detection. We showcase our
+                    solution on packets of different colors and sizes and contents.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/testbedCIIRC/Robot-Vision-PickPlace" target="_blank" rel="noopener">Code</a>
+                    <a href="https://www.youtube.com/watch?v=R7c1MT30IrA" target="_blank" rel="noopener">Video</a>
+                    <a href="https://ieeexplore.ieee.org/document/10260601" target="_blank" rel="noopener">Paper</a>
+                    <a href="https://testbed.ciirc.cvut.cz/labs/testbed/robotic-cells-ai-machine-vision" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="vision">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/plane_detection_demo.gif" alt="5G Edge Vision System" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">5G Edge Vision System</h3>
+                  <p class="project-category">Robotic Vision</p>
+                  <p class="project-desc">
+                    An artificial vision system based on CNNs and 3D pose estimation for a collaborative delta robot using
+                    an internal campus 5G network and a GPU server. The project was sponsored by T-Mobile CZ (Deutsche
+                    Telekom) and Siemens.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/Deep-Vision-System-with-5G-Edge-GPU-Server" target="_blank" rel="noopener">Code</a>
+                    <a href="https://testbed.ciirc.cvut.cz/labs/testbed/flexlink-delta/" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="humanoids">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/tiago.gif" alt="TIAGo Humanoid" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Luggage Carrying Task with the TIAGo Humanoid Robotic Platform</h3>
+                  <p class="project-category">Humanoid Robots</p>
+                  <p class="project-desc">
+                    Integration of advanced robotic capabilities such as perception, manipulation, navigation, and
+                    human-robot interaction using ROS. Key achievements include autonomous detection and navigation to pick
+                    up luggage (bag) based on CNNs, obstacle avoidance via SLAM, and following the operator to a designated
+                    location based on Human-Robot Interaction.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/tiago_ws" target="_blank" rel="noopener">Code</a>
+                    <a href="https://www.youtube.com/watch?v=Ih3iIqwa0Ek" target="_blank" rel="noopener">Video</a>
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.32927.88485" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="humanoids">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/nao.gif" alt="NAO U NO" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">NAO U NO: Teaching the NAO Humanoid to Play UNO Using AI</h3>
+                  <p class="project-category">Humanoid Robots</p>
+                  <p class="project-desc">
+                    The project aims to make the NAO Robot play the UNO card game. It uses ROS to integrate its different
+                    assets like sensing, deep learning based card detection, bipedal locomotion and decision-making based on
+                    a State Machine Agent.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/Nao_ws" target="_blank" rel="noopener">Code</a>
+                    <a href="https://www.youtube.com/watch?v=_0Dh0V_dilE" target="_blank" rel="noopener">Video</a>
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.19506.11201" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="learning &amp; control">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/snakebot.gif" alt="Robotic Snake CPG" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Central Pattern Generator Neural Network for Robotic Snake Control</h3>
+                  <p class="project-category">Learning &amp; Control</p>
+                  <p class="project-desc">
+                    Neuro inspired control of a Snake robot for locomotion and obstacle avoidance.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/Snakebot-NISE" target="_blank" rel="noopener">Code</a>
+                    <a href="https://youtube.com/shorts/icPXy979QQg" target="_blank" rel="noopener">Video</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="bio-robotics">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/soft_exo.gif" alt="Soft-Exoskeleton" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Convolutional Neural Network Based Soft-Exoskeleton for Stroke Patient Rehabilitation</h3>
+                  <p class="project-category">Bio-Robotics</p>
+                  <p class="project-desc">
+                    This paper presents a soft robotic glove for stroke patients that incorporates a CNN-based computer
+                    vision system. This neural network allows the glove to intelligently recognize objects and automatically
+                    adjust the hand's opening for grasping.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/CNN-based-soft-exoskeleton" target="_blank" rel="noopener">Code</a>
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.18303.52644" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="bio-robotics">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/exo_skin.gif" alt="2-DoF upper-limb exoskeleton" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Design and Implementation of 2-DoF Upper-Limb Exoskeleton with Combined Force and Position Control for Rehabilitation</h3>
+                  <p class="project-category">Bio-Robotics</p>
+                  <p class="project-desc">
+                    The exoskeleton assists arm and wrist movements with both position and force control, and uses an
+                    "intention detection algorithm" to predict the user's desired motions. This allows for more natural and
+                    responsive assistance, which was evaluated by measuring muscle activity and tracking the accuracy of
+                    executed movements.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/Wearable-Robotics" target="_blank" rel="noopener">Code</a>
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.25014.41289" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="bio-robotics">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/leg_exo.gif" alt="Lower-Extremity Exoskeleton" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Control System of a Lower-Extremity Exoskeleton Based on Artificial Neural Networks</h3>
+                  <p class="project-category">Bio-Robotics</p>
+                  <p class="project-desc">
+                    Design and implementation of a functional prototype of lower extremity brace actuation and its wireless
+                    communication control system. The design provides supportive torque and increases the range of motion
+                    after complications reducing muscular strength. The control system prototype facilitates elevating a leg,
+                    gradually followed by standing and slow walking. The main control modalities are based on an Artificial
+                    Neural Network (ANN).
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/Exoskeleton-Control-Algorithms" target="_blank" rel="noopener">Code</a>
+                    <a href="https://youtu.be/UmKADVIlhPU?si=6DHJGQz-yny-Oeq1&t=19" target="_blank" rel="noopener">Video</a>
+                    <a href="https://www.researchgate.net/publication/346463112_Control_System_of_a_Lower-Extremity_Exoskeleton_Based_on_Artificial_Neural_Networks" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="learning &amp; control">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/snake.gif" alt="Deep Q-Learning Snake Game" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Adversarial Multi-Agent Training Based on Deep Q-Learning Applied to the Snake Game</h3>
+                  <p class="project-category">Learning &amp; Control</p>
+                  <p class="project-desc">
+                    Implementation of RL multi-agent training for the snake game using Deep Q-learning.
+                  </p>
+                  <div class="project-links">
+                    <a href="https://github.com/david-s-martinez/reinforcement-learning-game" target="_blank" rel="noopener">Code</a>
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.35504.26885" target="_blank" rel="noopener">Poster</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="bio-robotics">
+              <div class="project-card">
+                <figure class="project-img">
+                  <img src="./assets/images/chip.jpg" alt="Soft micro robots fabrication" loading="lazy">
+                </figure>
+                <div class="project-info">
+                  <h3 class="project-title">Fabrication of Soft Milli, Micro and Nano Robots Based on Alginate Polymer Coating and Encapsulation</h3>
+                  <p class="project-category">Bio-Robotics</p>
+                  <div class="project-links">
+                    <a href="http://dx.doi.org/10.13140/RG.2.2.35919.60328" target="_blank" rel="noopener">Article</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps?q=Munich,Germany&output=embed"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:david.martinez@tum.de" method="post" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-        </div>
-    </nav>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;Portfolio</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
+  </main>
 
-        </div>
-    </section>
-    <!-- Publications  -->
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>Conferences & Awards </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
 
-        </div>
-    </section>
-    <!-- Awards -->
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/david-s-martinez">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/david-s-martinez/david-s-martinez.github.io/blob/main/LICENSE">License</a>
-            </div>
-        </div>
-    </footer>
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

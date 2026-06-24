@@ -1,69 +1,84 @@
-
-
 ![Github Forks](https://img.shields.io/github/forks/david-s-martinez/david-s-martinez.github.io?style=flat)
 ![Github Stars](https://img.shields.io/github/stars/david-s-martinez/david-s-martinez.github.io?style=flat)
 ![License](https://img.shields.io/github/license/david-s-martinez/david-s-martinez.github.io)
 ![Last Commit](https://img.shields.io/github/last-commit/david-s-martinez/david-s-martinez.github.io)
 
-# A simple Github Pages template for academic personal website.
+# David Martinez — Personal Portfolio
 
-## Preview
-[![Screenshot of the Website](https://raw.githubusercontent.com/david-s-martinez/david-s-martinez.github.io/main/screenshot_full.png)](https://david-s-martinez.github.io/)
+Personal portfolio website of **David Martinez**, AI & Robotics Engineer.
 
+:milky_way: Live: https://david-s-martinez.github.io/
 
-## Introduction
+Built on the [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) template — a fully responsive, single-page site using vanilla **HTML, CSS, and JavaScript**. No build step or framework is required.
 
-This is an academic personal website template based on [bootstrap](https://github.com/StartBootstrap/startbootstrap-new-age).
+## Sections
 
-The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
+A fixed sidebar (photo, contacts, links) plus tabbed navigation:
 
-This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
+- **About** — bio and areas of expertise
+- **Resume** — education, conferences & presentations, awards, research interests
+- **Portfolio** — projects with descriptions, media, and links, filterable by category
+- **Contact** — location map and contact form
 
-:milky_way: Demo: https://david-s-martinez.github.io/
+## Project structure
 
-
-## Getting Start
-### 1. Fork this repository
-The repository name should be `<username>.github.io`, which will also be your website's URL.
-
-
-### 2. Edit page content
-
-(1) Go to the folder where you want to store your project, and clone the new repository:
 ```
-git clone https://github.com/<username>/<username>.github.io.git
-```
-The directory structure is as follows:
-
-```.
 .
-├── contents
-└── static
-    ├── assets
-    │   └── img
-    ├── css
-    └── js
+├── index.html              # The entire site (content lives here)
+├── assets
+│   ├── css
+│   │   ├── style.css        # vCard template theme
+│   │   └── custom.css       # Project-specific overrides
+│   ├── js
+│   │   └── script.js        # Tab navigation, portfolio filter, etc.
+│   └── images               # Photos, project media, icons, favicon
+└── contents                 # Original Markdown content (kept as a backup/source)
 ```
 
-(2) Modify the content of each section, which corresponds to `contents/*.md`.
+## Editing content
 
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
+All page content is written directly in `index.html` — find the relevant
+`<article data-page="...">` block (about / resume / portfolio / contact) and edit it.
+To add a portfolio project, copy an existing `<li class="project-item ...">` card,
+update the image/text/links, and set its `data-category` to match a filter button.
+Replace images by dropping files into `assets/images/` and pointing the `src` at them.
 
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
+## Run locally
 
-(5) Push it: 
+Because the site uses relative asset paths and fetches nothing at build time, any
+static file server works. From the project root:
+
+```bash
+# Option 1 — Python (no install needed on macOS/Linux)
+python3 -m http.server 8000
+
+# Option 2 — Node
+npx serve .
 ```
-git commit -am 'init'
-git push
+
+Then open **http://localhost:8000** in your browser. Edit a file and refresh to see changes.
+
+> Opening `index.html` directly via `file://` mostly works too, but a local server
+> matches how GitHub Pages serves the site and avoids browser path quirks.
+
+## Deploy (GitHub Pages)
+
+This repository is a GitHub **user site** (`david-s-martinez.github.io`), so GitHub
+Pages serves `index.html` from the root of the default branch automatically — there
+is no build pipeline. To publish changes:
+
+```bash
+git add -A
+git commit -m "Update site"
+git push origin main
 ```
 
+The live site at https://david-s-martinez.github.io/ updates within about a minute.
+(If Pages was ever disabled: repo **Settings → Pages → Build and deployment →
+Source: Deploy from a branch**, branch `main`, folder `/ (root)`.)
 
-### 3. Enjoy
+## Credits & License
 
-Fire up a browser and go to `https://<username>.github.io`
+Template by [@codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio) (MIT).
 
-
-
-## License
-
-Copyright David Martinez, 2025. Licensed under an MIT license. You can copy and mess with this template.
+Copyright David Martinez, 2024–2025. Licensed under an MIT license.

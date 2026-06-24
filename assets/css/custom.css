@@ -8,7 +8,8 @@
 .about-text a,
 .timeline-text a,
 .timeline-item-title a,
-.timeline-sublist a {
+.timeline-sublist a,
+.project-desc a {
   display: inline;
 }
 
@@ -21,14 +22,17 @@
 .timeline-item-title a,
 .timeline-item-title a:visited,
 .timeline-sublist a,
-.timeline-sublist a:visited {
+.timeline-sublist a:visited,
+.project-desc a,
+.project-desc a:visited {
   color: var(--orange-yellow-crayola);
 }
 
 .about-text a:hover,
 .timeline-text a:hover,
 .timeline-item-title a:hover,
-.timeline-sublist a:hover {
+.timeline-sublist a:hover,
+.project-desc a:hover {
   color: var(--vegas-gold);
 }
 
@@ -83,6 +87,19 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Embedded video player in a project card (16:9, fills the image area).
+ * Higher specificity beats the responsive aspect-ratio media query. */
+.project-card .project-img.project-img--video {
+  aspect-ratio: 16 / 9;
+}
+
+.project-card .project-img iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 /* Stack multiple media vertically inside one project image area.

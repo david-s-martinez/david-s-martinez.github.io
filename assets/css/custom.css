@@ -311,3 +311,47 @@
   text-align: center;
 }
 .sidebar-copyright a { color: var(--vegas-gold); }
+
+/* ---------------------------------------------------------------------------
+ * Mobile — portfolio gifs as a horizontal scroll strip
+ * On small screens the contained image box squeezes gifs too small; show them
+ * at a usable height and let wider/stacked gifs scroll sideways instead.
+ * (The video embed is excluded so it keeps filling the card width.)
+ * ------------------------------------------------------------------------ */
+@media (max-width: 579px) {
+  .project-card .project-img:not(.project-img--video) {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--vegas-gold) var(--onyx);
+  }
+
+  .project-card .project-img:not(.project-img--video) img {
+    flex: 0 0 auto;
+    width: auto;
+    height: 200px;
+    max-width: none;
+    object-fit: contain;
+    scroll-snap-align: start;
+  }
+
+  .project-card .project-img:not(.project-img--video)::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .project-card .project-img:not(.project-img--video)::-webkit-scrollbar-track {
+    background: var(--onyx);
+    border-radius: 10px;
+  }
+
+  .project-card .project-img:not(.project-img--video)::-webkit-scrollbar-thumb {
+    background: var(--vegas-gold);
+    border-radius: 10px;
+  }
+}

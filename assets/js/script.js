@@ -174,3 +174,12 @@ const updateMediaScroll = function () {
 window.addEventListener("load", updateMediaScroll);
 window.addEventListener("resize", updateMediaScroll);
 updateMediaScroll();
+
+
+
+// keep the copyright end year current automatically
+const currentYearEls = document.querySelectorAll("[data-current-year]");
+const currentYear = new Date().getFullYear();
+for (let i = 0; i < currentYearEls.length; i++) {
+  currentYearEls[i].textContent = currentYear;
+}

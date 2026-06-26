@@ -46,8 +46,12 @@
   text-align: center;
 }
 
-/* Round the sidebar profile photo to match the rounded theme */
+/* Round the sidebar profile photo to match the rounded theme.
+ * Force a square aspect so the portrait can't grow taller than the
+ * collapsed sidebar (max-height + overflow:hidden would clip its bottom,
+ * making it look cropped by the article below). */
 .avatar-box img {
+  aspect-ratio: 1;
   border-radius: 18px;
   object-fit: cover;
 }
